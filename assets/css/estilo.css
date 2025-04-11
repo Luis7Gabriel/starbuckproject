@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&family=Oswald:wght@200..700&display=swap');
+
+/* Reset para evitar problemas de caixa */
+* {
+    box-sizing: border-box;
+}
+
+/* Estilo base do corpo */
+body {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+}
+
+/* Linha verde no topo */
+header .line {
+    background-color: #117050;
+    height: 10px;
+}
+
+/* Container centralizado para conteúdo */
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0px 30px; /* novo: adiciona espaço lateral */
+}
+
+
+.bar {
+    background-color: #006341;
+    width: 168px;
+    height: 22px;
+}
+
+h1 {
+    font-size: 90px;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+    line-height: 90px;
+    margin: 0;
+    margin-bottom: 30px;
+}
+h2 {
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+    margin: 20 0;
+    line-height: 45px;
+}
+
+.button {
+    display: inline-block;
+    border: 2px solid #454545;
+    padding: 10px 30px;
+    border-radius: 3px;
+    color: #454545;
+    text-decoration: none; 
+}
+
+.button:hover {
+    color: #fff;
+    background-color: #454545;
+}
+
+/* Área do cabeçalho principal */
+.header--area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 0 20px; /* novo: espaçamento lateral sem .container */
+}
+
+/* LOGO na lateral esquerda */
+.header-left img {
+    width: 64px;
+    height: 64px;
+    display: block;
+}
+
+/* Área direita do header (busca + menu) */
+.header--right {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Busca (formulário) */
+.header--search form {
+    display: flex;
+}
+
+.header--search input {
+    font-size: 16px;
+    padding: 8px 15px;
+    border: 1px solid #999999;
+    outline: 0;
+    width: 100%;
+    max-width: 220px;
+}
+
+.header--search button {
+    border: 0;
+    background: transparent;
+    margin-left: -30px;
+    cursor: pointer;
+}
+
+.header--search button img {
+    width: 16px;
+    height: 16px;
+}
+
+/* Espaço entre busca e ícone do menu */
+.header--menu {
+    margin-left: 50px;
+}
+
+.header--menu img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Banner com imagem de fundo */
+.banner {
+    background-image: url('../images/bg.jpg');
+    background-position: center;
+    background-size: cover;
+    padding-top: 90px;
+}
+
+/* Imagens circulares no banner */
+.banner--image img {
+    width: 148px;
+    height: 148px;
+    border: 6px solid #117050;
+    border-radius: 100px;
+    margin-top: 60px;
+    margin-right: 40px;
+}
+
+.area1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);    
+}
+
+.area1--content {
+    padding: 80px;
+}
+
+.area1--quote {
+    margin-bottom: 30px;
+}
+
+.area1--text {
+    margin-bottom: 50px;
+    line-height: 25px;
+}
+
+.area1--img1 {
+    height: 350px;
+    background-image: url('../images/f2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.area1--img2 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    background-image: url('../images/f1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.area2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);    
+}
+
+.area2--content {
+    padding: 80px;
+}
+
+
+.area2--text {
+    margin-bottom: 50px;
+    line-height: 25px;
+}
+
+.area2--img1 {
+    height: 450px;
+    background-image: url('../images/f4.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.area2--img2 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    background-image: url('../images/f3.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.area3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);    
+}
+
+.area3--content {
+    padding: 200px 80px;
+    background-image: url('../images/bg2.jpg');
+    background-size: cover;
+    background-position: left;
+}
+
+
+.area3--text {
+    margin-bottom: 50px;
+    line-height: 25px;
+}
+
+.area3--img1 {
+    background-image: url('../images/f5.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.area4 {
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    background-color: #e8e9ee;
+}
+
+.area4--content {
+ padding: 160px 80px;   
+}
+
+.area4--text {
+    margin-bottom: 50px;
+    line-height: 25px;
+}
+
+.area4--img1 {
+    background-image: url('../images/bg3.jpg');
+    background-position: left;
+}
+
+
+.area5 {
+    background-image: url('../images/bg4.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 80px;
+    text-align: center;
+}
+
+
+@media (max-width: 1140px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    h1 {
+      font-size: 50px;
+      line-height: 55px;
+      text-align: center;
+    }
+  
+    h2 {
+      font-size: 26px;
+      line-height: 32px;
+      text-align: center;
+    }
+  
+    .header--area {
+      flex-direction: column;
+      height: auto;
+      padding: 20px;
+      gap: 15px;
+    }
+  
+    .header--menu {
+      margin-left: 0;
+    }
+  
+    .banner {
+      padding-top: 40px;
+      text-align: center;
+    }
+  
+    .banner--image {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .banner--image img {
+      margin: 20px 10px 0 10px;
+    }
+  
+    .area1,
+    .area2,
+    .area3,
+    .area4 {
+      grid-template-columns: 1fr;
+    }
+  
+    .area1--content,
+    .area2--content,
+    .area3--content,
+    .area4--content {
+      padding: 40px 20px;
+      text-align: center;
+    }
+  
+    .area1--img1,
+    .area1--img2,
+    .area2--img1,
+    .area2--img2,
+    .area3--img1,
+    .area4--img1 {
+      height: 250px;
+      grid-column: auto;
+      grid-row: auto;
+    }
+  
+    .area5 {
+      height: 300px;
+    }
+  
+    footer {
+      padding: 40px 20px;
+      font-size: 14px;
+    }
+  }
+  
+  
